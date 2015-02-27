@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^api/championship/top/([0-9]+) top.php?count=$1 [NC]
+
+RewriteRule ^api/championship/top/ top.php [NC]
+
+
+RewriteRule ^api/championship/result result.php [NC,L]
